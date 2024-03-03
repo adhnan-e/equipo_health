@@ -28,17 +28,17 @@ class _SignupScreenState extends State<SignupScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Spacer(flex: 2,),
+            const Spacer(flex: 4,),
             const Text("Welcome",style: TextStyle(fontSize: 50,fontWeight: FontWeight.w900,color: Colors.black),),
             const Text("User",style: TextStyle(fontSize: 50,fontWeight: FontWeight.w900,color: Colors.black),),
-            const SizedBox(height: 20,),
+            const Spacer(flex: 1,),
             const Text("Sign in to continue",style: TextStyle(fontSize: 18,fontWeight: FontWeight.normal,color: Colors.grey),),
-            const SizedBox(height: 60,),
+            const Spacer(flex: 2,),
             CommonTextFieldWidget(hintText: 'Name',controller: _nameController,),
             CommonTextFieldWidget(hintText: 'Email',controller: _emailController,),
             CommonTextFieldWidget(hintText: 'Password',isPassword: true,controller: _passwordController,),
             const GenderWidget(),
-            const SizedBox(height: 20,),
+            const Spacer(flex: 1,),
             Text.rich(
               TextSpan(
                 children: [
@@ -51,9 +51,9 @@ class _SignupScreenState extends State<SignupScreen> {
                 ],
               ),
             ),
-            const SizedBox(height: 60,),
-            CommonButtonWidget(callback: () => Provider.of<AuthProvider>(context, listen: false).signup(context,name: _nameController.text, email: _emailController.text, password: _passwordController.text)),
             const Spacer(flex: 2,),
+            CommonButtonWidget(callback: () => Provider.of<AuthProvider>(context, listen: false).signup(context,name: _nameController.text, email: _emailController.text, password: _passwordController.text)),
+            const Spacer(flex: 4,),
           ],),
       ),
     );

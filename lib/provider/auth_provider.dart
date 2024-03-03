@@ -24,7 +24,7 @@ class AuthProvider extends ChangeNotifier {
   }
 
 onInit(BuildContext context){
-    Future.delayed(const Duration(seconds: 3),() async{
+    Future.delayed(const Duration(milliseconds: 100),() async{
      User? user= _auth.currentUser();
      userModel=(await _dbUserData.getUserData(user?.uid??""));
 
@@ -57,6 +57,7 @@ onInit(BuildContext context){
     User? user = await _auth.signInWithEmailAndPassword(email, password);
 
     if (user != null) {
+      userModel=(await _dbUserData.getUserData(user.uid));
       showToast(message: 'User is successfully signed in');
       await Navigator.pushReplacement(
         context,

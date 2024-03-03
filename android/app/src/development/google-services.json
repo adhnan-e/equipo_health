@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "79753342196",
+    "firebase_url": "https://aut-improtion.firebaseio.com",
+    "project_id": "aut-improtion",
+    "storage_bucket": "aut-improtion.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:79753342196:android:023ecf1e62c13e55fb02a1",
+        "android_client_info": {
+          "package_name": "com.equipo.health.adhnan.equipo_health"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5kOsRKaM9tPovy45H3ugZ5iBbqIf5xF0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "79753342196-f4quuh3rveeau78fj98shgdjne34avvt.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "79753342196-653b8hhorkntpuhrn85070b0f7tj2h7o.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.exception"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:79753342196:android:9e962dafe1d93750fb02a1",
+        "android_client_info": {
+          "package_name": "com.equipo.health.adhnan.equipo_health.dev"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5kOsRKaM9tPovy45H3ugZ5iBbqIf5xF0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "79753342196-f4quuh3rveeau78fj98shgdjne34avvt.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "79753342196-653b8hhorkntpuhrn85070b0f7tj2h7o.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.exception"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

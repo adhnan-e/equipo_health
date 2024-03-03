@@ -1,6 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:equipo_health/app/app.dart';
-import 'package:equipo_health/counter/counter.dart';
 
 void main() {
   group('App', () {

@@ -28,15 +28,15 @@ class _LoginScreenState extends State<LoginScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Spacer(flex: 2,),
+            const Spacer(flex: 4,),
             const Text("Welcome",style: TextStyle(fontSize: 50,fontWeight: FontWeight.w900,color: Colors.black),),
             const Text("Back",style: TextStyle(fontSize: 50,fontWeight: FontWeight.w900,color: Colors.black),),
-            const SizedBox(height: 20,),
+
             const Text("Sign in to continue",style: TextStyle(fontSize: 18,fontWeight: FontWeight.normal,color: Colors.grey),),
-            const SizedBox(height: 60,),
+            const Spacer(flex: 2,),
             CommonTextFieldWidget(hintText: 'Email',controller: _emailController,),
             CommonTextFieldWidget(hintText: 'Password',isPassword: true,controller: _passwordController,),
-            const SizedBox(height: 20,),
+            const Spacer(flex: 1,),
             Text.rich(
               TextSpan(
                 children: [
@@ -49,9 +49,9 @@ class _LoginScreenState extends State<LoginScreen> {
                 ],
               ),
             ),
-            const SizedBox(height: 60,),
+            const Spacer(flex: 1,),
             CommonButtonWidget(callback: () => Provider.of<AuthProvider>(context, listen: false).login(context, email: _emailController.text, password: _passwordController.text)),
-            const Spacer(flex: 2,),
+            const Spacer(flex: 4,),
           ],),
       ),
     );
