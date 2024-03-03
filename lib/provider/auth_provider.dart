@@ -96,13 +96,14 @@ onInit(BuildContext context){
     if (userCredential != null) {
       userModel=UserModel(userCredential.uid, name, email, getGender());
       _dbUserData.updateDataToDB(user: userModel);
+      showToast(message: 'User is successfully signed up');
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => DashboardScreen()),
+      );
     }
 
-    showToast(message: 'User is successfully signed up');
-    Navigator.pushReplacement(
-      context,
-      MaterialPageRoute(builder: (context) => DashboardScreen()),
-    );
+
   }
 
   logout(BuildContext context)async{
