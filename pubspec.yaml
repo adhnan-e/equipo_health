@@ -7,16 +7,21 @@ environment:
   sdk: "^3.3.0"
 
 dependencies:
-  bloc: ^8.1.3
+  firebase_auth: ^4.17.6
+  firebase_core: ^2.25.5
+  firebase_database: ^10.4.7
   flutter:
     sdk: flutter
-  flutter_bloc: ^8.1.4
   flutter_localizations:
     sdk: flutter
+  fluttertoast: ^8.2.4
+  google_fonts: ^6.2.0
   intl: ^0.18.1
+  ionicons: ^0.2.2
+  provider: ^6.1.2
+
 
 dev_dependencies:
-  bloc_test: ^9.1.6
   flutter_test:
     sdk: flutter
   mocktail: ^1.0.3
