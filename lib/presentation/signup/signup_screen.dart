@@ -1,5 +1,4 @@
 import 'package:equipo_health/presentation/signup/widgets/common_radiobutton.dart';
-import 'package:equipo_health/presentation/dashboard/dashboard_screen.dart';
 import 'package:equipo_health/presentation/login/login_screen.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
