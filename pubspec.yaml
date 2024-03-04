@@ -15,7 +15,7 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   fluttertoast: ^8.2.4
-  google_fonts: ^6.2.0
+  google_fonts: ^6.2.1
   intl: ^0.18.1
   ionicons: ^0.2.2
   provider: ^6.1.2
